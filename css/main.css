@@ -1,0 +1,228 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,700");
+
+/*body of all pages*/
+.html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  background-color: white;
+}
+/*Text Section*/
+h1 {
+  font-size: 4rem;
+  color: aliceblue;
+}
+h3{
+  color: white;
+}
+
+ .white-background{
+  background-color: white;
+  opacity: 0.8;
+ }
+ .about{
+color: black;
+ }
+a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none !important;
+  color: white !important;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/*Nav section*/
+.nav-link {
+  border-bottom: 3px solid transparent;
+  transition: 0.5s;
+}
+.nav-link a {
+  text-decoration: none;
+  transition: color 0.5s;
+}
+.nav-link:hover {
+  border-bottom: 3px solid white;
+}
+#bg{
+  background-color: #adaea8;
+}
+
+.navbar-toggler-icon {
+  
+}
+
+ /*Index Page*/
+ .title{
+  color: white;
+  font-size: 3rem;
+}
+
+h3:hover{
+  color: black;
+}
+h3::before{
+  content:"";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  background: black;
+  transition: 0.8s;
+} 
+h3{
+  font-size: 1rem;
+  background: none;
+  transition: 0.8s;
+}
+ .background-image {
+  background-image: url('../img/8.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: auto;
+  height: 60vh;
+}
+
+ /*Shop Page*/
+ .jumbotron{
+  background-color: #adaea8;
+ }
+
+.card{
+  width: auto;
+  height: auto;
+  margin-bottom: 2em;
+}
+.card-text{
+  color: black;
+}
+.btn-outline-primary{
+  background-color: purple;
+  border: none;
+}
+
+/* Gallery Page */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+.navbar-toggler-icon .navbar-toggler {
+  border-color: rgb(255,102,203);
+} 
+
+ /*Contact Page*/
+ .contact{
+  background: url(../img/15.jpg)no-repeat;
+  background-size: 100%;
+  width: 100%;
+  height: 100vh;
+ }
+
+ .head{
+  background-color: #adaea8;
+  border-radius: 5px;
+  margin-top: -40px;
+  -webkit-box-shadow: 5px 5px 15px 5px #AEA98B; 
+box-shadow: 5px 5px 15px 5px #AEA98B;
+ }
+#contact-icon-fac{
+  color: blue;
+  font-size: 5rem;
+}
+
+#contact-icon-ins{
+  color: red;
+  font-size: 5rem;
+}
+
+/*Footer page*/
+.footer-text {
+  color: black;
+}
+.fa-instagram, .fa-facebook, .fa-envelope {
+color: black;
+font-size: 25px;
+}
+
+.fa-facebook:hover {
+  color: blue;
+  }
+  .fa-instagram:hover{
+    color: #c307ea;
+  }
+  .fa-envelope:hover{
+    color: red;
+  }
+
+@media (min-width: 992px){
+  .navbar li {
+      margin-left : 3em;
+      margin-right : 3em;
+  }
+
+}
+   @media (min-width: 768px){
+    .title{
+      font-size: 4rem;
+    }
+    
+    h3{
+      font-size: 1rem;
+      background: none;
+      transition: 0.8s;
+    }
+    .background-image {
+      background-image: url('../img/9.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: auto;
+      height: 60vh;
+    }
+
+   }
+
+/*gallery*/
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* gallery */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+
+@media (min-width: 915px){
+  .background-image {
+    background-image: url('../img/8.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: auto;
+    height: 100vh;
+  }
+  .contact{
+    background: url(../img/15.jpg)no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 100vh;
+   }
+  }
